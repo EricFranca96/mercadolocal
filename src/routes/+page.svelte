@@ -1,9 +1,6 @@
-<h1>Teste</h1>
+<script>
+  import Hero from "$lib/Hero.svelte";
+</script>
 
-<style>
-  h1 {
-    color: blue;
-    font-family: var(--fonte-secondaria);
-  }
-</style>
+<Hero/>
 
