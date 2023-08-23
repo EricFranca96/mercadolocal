@@ -6,6 +6,8 @@
   import Footer from "$lib/Footer.svelte";
 </script>
 
+
+<div class="app">
 <Header/>
 <main class="main">
   <div class="main__container container">
@@ -13,3 +15,17 @@
   </div>
 </main>
 <Footer/>
+</div>
+
+
+
+<style>
+  .app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  main {
+    margin-bottom: auto;
+  }
+</style>
