@@ -7,6 +7,8 @@
   let metrica = 'unidade';
   let img = '/src/lib/assets/maca.jpg';
   let alt = 'Várias maçãs vermelhas';
+
+  
 </script>
 
 <section class="modal">
@@ -18,7 +20,7 @@
       </div>
 
       <div class="conteudo">
-        <h3 class="nome">{nome}</h3>
+          <h3 class="nome">{nome}</h3>
 
         <div class="info">
           <span class="preco">{preco}</span>
