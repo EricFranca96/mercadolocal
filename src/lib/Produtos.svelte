@@ -1,12 +1,11 @@
+<script>
+	import Produto from "$lib/Produto.svelte";
+
+</script>
 <section class="produtos">
-  <h2>Produto 1</h2>
-  <h2>Produto 2</h2>
-  <h2>Produto 1</h2>
-  <h2>Produto 2</h2>
-  <h2>Produto 1</h2>
-  <h2>Produto 2</h2>
-  <h2>Produto 1</h2>
-  <h2>Produto 2</h2>
+  <Produto/>
+  <Produto/>
+  
 </section>
 
 <style>
