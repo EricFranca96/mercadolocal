@@ -3,7 +3,7 @@
   import Produtos from "$lib/Produtos.svelte";
 
   export let data;
-  console.log(data);
+  
 
 </script>
 
@@ -13,7 +13,7 @@
 
 </div>
 
-<Produtos/>
+<Produtos produtos={data.produtos}/>
 
 <style>
   .painel{

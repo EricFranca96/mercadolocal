@@ -1,7 +1,7 @@
 <footer class="footer">
   <div class="footer__container container">
     <p>© Mercado Local, 2023</p>
-    <p>Desenvolvido por <a href="#">Eric França</a></p>
+    <p>Desenvolvido por <a href="#"> Eric França</a></p>
   </div>
 </footer>
 
