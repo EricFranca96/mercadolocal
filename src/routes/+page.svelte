@@ -3,6 +3,7 @@
   import Produtos from "$lib/Produtos.svelte";
 	import Lista from "$lib/Lista.svelte";
   import {lista} from "$lib/stores";
+  import Dados from "$lib/Dados.svelte";
 
   export let data;
   
@@ -17,7 +18,10 @@
 <Lista/>
 {/if}
 
+<Dados/>
 </div>
+
+
 
 
 
