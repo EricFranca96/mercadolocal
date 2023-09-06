@@ -2,6 +2,7 @@
   import { CheckCircle, LogOut, X } from 'lucide-svelte';
 
   import { dados } from '$lib/stores';
+  import { imask } from '@imask/svelte';
 
   // salvar dados
   function salvarDados() {
@@ -68,7 +69,7 @@
 
   <label for="cep">
     <span>CEP</span>
-    <input on:blur={puxarEndereco($dados.cep)} bind:value={$dados.cep} type="cep" name="cep" id="cep" required  disabled={$dados.logado}>
+    <input use:imask={{mask: '00000-000'}} on:blur={puxarEndereco($dados.cep)} bind:value={$dados.cep} type="cep" name="cep" id="cep" required  disabled={$dados.logado}>
   </label>
 
   <label for="numero">

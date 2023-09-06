@@ -54,7 +54,9 @@
         }
       ]
     }
-    toast.success("Produto adicionado!");
+    toast.success("Produto adicionado!", {
+      position: "top-right"
+    });
   }
   
 </script>
