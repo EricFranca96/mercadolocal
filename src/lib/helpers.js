@@ -16,3 +16,9 @@ export function calcularValor(preco, quantidade) {
 
   return valor;
 }
+
+
+// WhatsaApp
+export function enviarWhatsApp() {
+  return 'https://api.whatsapp.com/send?phone=5511975401380&text=Testando';
+}
