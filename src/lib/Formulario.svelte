@@ -167,4 +167,10 @@
     background-color: var(--alt);
     filter: brightness(1.05);
   }
+
+  @media(max-width: 1250px) {
+    form {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>
