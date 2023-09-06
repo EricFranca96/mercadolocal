@@ -11,6 +11,8 @@
   onMount(() => {
     // verificar dados no localStorage
     if (localStorage.getItem('dados')) {
+      $dados.logado = true;
+      $: console.log($dados);
       let data = JSON.parse(localStorage.getItem('dados'));
       $dados.nome = data.nome;
       $dados.email = data.email;
