@@ -1,7 +1,8 @@
 <script>
   import Marca from "$lib/assets/Marca.svelte";
   import { X, PlusCircle, MinusCircle } from 'lucide-svelte';
-  import {modal, lista} from '$lib/stores';
+  import {modal, lista} from '$lib/stores'
+  import toast, { Toaster } from 'svelte-french-toast';
 
   $: nome = $modal.nome;
   $: preco = $modal.preco;
@@ -53,10 +54,12 @@
         }
       ]
     }
-
+    toast.success("Produto adicionado!");
   }
   
 </script>
+
+<Toaster/>
 
 <svelte:window on:keyup={teclaPressionada} />
 
