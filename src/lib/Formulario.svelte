@@ -7,6 +7,13 @@
   function salvarDados() {
     // login
     $dados.logado = true;
+
+    // adicionar padrão ao número / complemento
+    if (!$dados.numero) {
+      $dados.numero = 's/n';
+    }
+
+
     localStorage.setItem('dados', JSON.stringify($dados));
   }
 
