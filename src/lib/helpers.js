@@ -23,10 +23,21 @@ export function enviarWhatsApp(dados, produtos, total) {
   if (!dados || !produtos || !total) return;
 
   let conteudo =
-  `👤 ${dados.nome}\n ${dados.endereco}, ${dados.numero}, ${dados.bairro}, ${dados.cidade}, ${dados.estado}`;
-  
+  `👤 ${dados.nome}\n${dados.endereco}, ${dados.numero}, ${dados.bairro}, ${dados.cidade}, ${dados.estado}`;
+
+  conteudo +=  `\n\n📝 Pedido\n`;
+
+  // lista de produtos
+  produtos.forEach(produto => {
+    conteudo += `• ${produto.quantidade}x ${produto.nome} (R$ ${produto.preco}/${produto.metrica}) R$ ${calcularValor(produto.preco, produto.quantidade)}\n`
+  });
+
+  // total
+  conteudo += `\nTotal: R$ ${total}`;
+
+
 // preparar conteudo para link do WhatsApp
 conteudo = encodeURIComponent(conteudo);
 
-  return `https://api.whatsapp.com/send?phone=5519981128000&text=${conteudo}`;
+  return `https://api.whatsapp.com/send?phone=5511975401380&text=${conteudo}`;
 }
