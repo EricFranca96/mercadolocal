@@ -19,6 +19,14 @@ export function calcularValor(preco, quantidade) {
 
 
 // WhatsaApp
-export function enviarWhatsApp() {
-  return 'https://api.whatsapp.com/send?phone=5511975401380&text=Testando';
+export function enviarWhatsApp(dados, produtos, total) {
+  if (!dados || !produtos || !total) return;
+
+  let conteudo =
+  `👤 ${dados.nome}\n ${dados.endereco}, ${dados.numero}, ${dados.bairro}, ${dados.cidade}, ${dados.estado}`;
+  
+// preparar conteudo para link do WhatsApp
+conteudo = encodeURIComponent(conteudo);
+
+  return `https://api.whatsapp.com/send?phone=5519981128000&text=${conteudo}`;
 }
